@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="baseball.css" />
+</head>
+<body>
+  <div class="scoreboard-container">
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="main-info">
+        <h1 class="stadium-title">CTU DANAO</h1>
+        <table class="inning-table">
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+              <th>6</th><th>7</th><th>8</th><th>9</th>
+              <th>R</th><th>H</th><th>E</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Team A</td>
+              <td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0</td>
+              <td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0</td>
+              <td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0</td>
+              <td class="runs-a">0</td><td class="hits-a">0</td><td class="errors-a">0</td>
+            </tr>
+            <tr>
+              <td>Team B</td>
+              <td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0</td>
+              <td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0</td>
+              <td contenteditable="true">0</td><td contenteditable="true">0</td><td contenteditable="true">0</td>
+              <td class="runs-b">0</td><td class="hits-b">0</td><td class="errors-b">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="count-container">
+        <div class="count-tracker">
+        <div class="count-box">
+          <label for="balls">Balls</label>
+          <div id="balls" class="count">0</div>
+          <div class="btn-group">
+            <button onclick="addCount('balls')">+1</button>
+            <button onclick="resetCount('balls')">Reset</button>
+          </div>
+        </div>
+
+        <div class="count-box">
+          <label for="strikes">Strikes</label>
+          <div id="strikes" class="count">0</div>
+          <div class="btn-group">
+            <button onclick="addCount('strikes')">+1</button>
+            <button onclick="resetCount('strikes')">Reset</button>
+          </div>
+        </div>
+
+        <div class="count-box">
+          <label for="outs">Outs</label>
+          <div id="outs" class="count">0</div>
+          <div class="btn-group">
+            <button onclick="addCount('outs')">+1</button>
+            <button onclick="resetCount('outs')">Reset</button>
+          </div>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+    <!-- Players Section -->
+    <div class="players-section">
+      <div class="players-grid">
+        <div class="team-players left-team">
+          <div class="player-card left-player" data-player="player1">
+            <div class="player-name">Alucard Virellius</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+        </div>
+
+        <div class="players-header">Players</div>
+
+        <div class="team-players right-team">
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player7">
+            <div class="player-name">Zilong Drakemire</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="baseball.js"></script>
+</body>
+</html>

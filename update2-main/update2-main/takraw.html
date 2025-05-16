@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scoreboard</title>
+  <link rel="stylesheet" href="takraw.css" />
+</head>
+<body>
+  <div class="scoreboard-container">
+
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+      <div class="team">
+        <h2>Team A</h2>
+        <div class="score red" id="scoreA">0</div>
+        <div class="bonus">BONUS</div>
+        <div class="foul-tol-container">
+          <div class="set1">SET 1</div>
+          <div class="set2">SET 2</div>
+        </div>
+        <div class="foul-tol-counter">
+          <div class="tol-count">0</div>
+          <div class="foul-count">0</div>
+        </div>
+        <div class="button-container">
+          <div class="plus-wrapper">
+            <button class="plus-btn" data-team="A">+</button>
+            <div class="point-options hidden">
+              <button class="add1" data-team="A">+1</button>
+            </div>
+          </div>
+          <button class="minus-btn" data-team="A">-</button>
+        </div>
+      </div>
+
+      <div class="main-info">
+        <div class="clock">00:00</div>
+        <div class="controls">
+          <!-- Timer controls will be added here by JavaScript -->
+        </div>
+        <div class="change-court-container">
+          <p>Change Court</p>
+        </div>
+        <div class="period-container">
+          <div class="period">PERIOD</div>
+          <span class="periodnum">2</span>
+        </div>
+        <div class="series-score-container">
+          <div class="series-score">
+            <span class="series-text">Series Score</span>
+          </div>
+          <div class="series-score-counter">
+            <div class="team-score team-score1">0</div>
+            <div class="team-score team-score2">0</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team">
+        <h2>Team B</h2>
+        <div class="score yellow" id="scoreB">0</div>
+        <div class="bonus">BONUS</div>
+        <div class="foul-tol-container">
+          <div class="set1">SET 1</div>
+          <div class="set2">SET 2</div>
+        </div>
+        <div class="foul-tol-counter">
+          <div class="tol-count">0</div>
+          <div class="foul-count">0</div>
+        </div>
+        <div class="button-container">
+          <div class="plus-wrapper">
+            <button class="plus-btn" data-team="B">+</button>
+            <div class="point-options hidden">
+              <button class="add1" data-team="B">+1</button>
+            </div>
+          </div>
+          <button class="minus-btn" data-team="B">-</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Players Section -->
+    <div class="players-section">
+      <div class="players-grid">
+        <div class="team-players left-team">
+          <div class="player-card left-player" data-player="player1">
+            <div class="player-name">Alucard Virellius</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player1">
+            <div class="player-name">Alucard Virellius</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card left-player" data-player="player2">
+            <div class="player-name">Layla Stormhart</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+        </div>
+
+        <div class="players-header">Players</div>
+
+        <div class="team-players right-team">
+          <div class="player-card right-player" data-player="player6">
+            <div class="player-name">Eudora Ashwyn</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player7">
+            <div class="player-name">Zilong Drakemire</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+          <div class="player-card right-player" data-player="player1">
+            <div class="player-name">Alucard Virellius</div>
+            <div class="player-score">Score: <span>0</span></div>
+            <div class="player-photo">
+              <img src="/pictures/mcnayeon.jpg" alt="Player">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script src="takraw.js"></script>
+</body>
+</html>
